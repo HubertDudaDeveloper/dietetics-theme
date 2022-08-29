@@ -220,7 +220,6 @@ table {
 .header {
   background-color: #ffdace;
   width: 100%;
-  padding: 25px 0px;
   border-bottom-color: rgba(255, 255, 255, 0.3215686275);
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -245,6 +244,14 @@ table {
     align-content: center;
     align-items: center;
   }
+}
+.header-nav__logo {
+  content: url(images/logo.b490f5d0.png);
+  height: 100px;
+  width: 100px;
+}
+.header-nav__menu {
+  padding: 25px 0px;
 }
 @media screen and (min-width: 320px) {
   .header-nav__menu {
@@ -276,6 +283,12 @@ table {
 }
 .header-nav__menu-cart {
   all: unset;
+}
+.header-nav__menu-cart a:hover {
+  font-size: inherit;
+  font-weight: italic;
+  color: #fffce7;
+  text-shadow: 1px 1px grey;
 }
 
 .footer {

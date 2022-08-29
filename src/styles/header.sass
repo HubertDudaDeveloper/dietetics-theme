@@ -1,7 +1,6 @@
 .header
     background-color: $primaryColor
     width: 100%
-    padding: 25px 0px
     border-bottom-color:#ffffff52
     border-bottom-style: solid
     border-bottom-width: 2px
@@ -12,6 +11,9 @@
                 @include flex(row, space-between, center, center)
         padding: 0px 50px
         &__logo
+            content: url(/assets/logo.png)
+            height: 100px
+            width: 100px
         &__menu
             @include atSmall 
                 display: none
@@ -21,6 +23,7 @@
                 width: 50%
             @include atLarge
                 width: 30%
+            padding: 25px 0px
 
             &-item
                 color: $secondaryColor
@@ -30,3 +33,5 @@
                 font-family: 'Barlow Semi Condensed', sans-serif
             &-cart
                 all: unset
+                a:hover
+                        @include font(inherit, italic, $secondaryColor)
