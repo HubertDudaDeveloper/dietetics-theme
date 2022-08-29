@@ -1,0 +1,16 @@
+.contact
+    &::before
+        display: block
+        content: "Formularz kontaktowy"
+        margin: 20px
+    &__form
+        @include flex(column,center,center,center)
+        input
+            background-color: $primaryColor
+            margin: 5px
+            padding: 5px
+            border-radius: 5px
+            border: 1px grey solid
+            &[type="checkbox"]
+                height: 20px
+                width: 20px

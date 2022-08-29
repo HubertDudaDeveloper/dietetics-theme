@@ -1,0 +1,32 @@
+.header
+    background-color: $primaryColor
+    width: 100%
+    padding: 25px 0px
+    border-bottom-color:#ffffff52
+    border-bottom-style: solid
+    border-bottom-width: 2px
+    &-nav
+        @include atSmall
+            @include flex(row, center, center, center)
+        @include atMedium
+                @include flex(row, space-between, center, center)
+        padding: 0px 50px
+        &__logo
+        &__menu
+            @include atSmall 
+                display: none
+                justify-content: space-around
+            @include atMedium
+                @include flex(row, space-between, center, center)
+                width: 50%
+            @include atLarge
+                width: 30%
+
+            &-item
+                color: $secondaryColor
+                text-shadow: 1.5px 1.5px grey
+                text-transform: uppercase
+                font-weight: bold
+                font-family: 'Barlow Semi Condensed', sans-serif
+            &-cart
+                all: unset

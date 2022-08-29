@@ -1,0 +1,56 @@
+.hero
+  background-color: $secondaryColor
+  color: black
+  border-radius: 5px
+  position: relative
+  width: 100%
+    
+  &__content
+    display: grid
+    justify-items: end
+    
+    &-container
+      padding: 0% 10%
+      grid-area: 1 / 1 / 2 / 2
+      @include flex(column,center,center,center)
+
+    &-title
+      @include atSmall
+        font-size: 2rem
+      @include atMedium
+        font-size: 3rem
+      @include atLarge
+        font-size: 5rem
+      color: $primaryColor
+      text-shadow: 1px 1px grey
+      z-index: 1
+      font-weight: bold
+      margin: 0
+      font-family:'Oooh Baby', cursive  
+
+  &__image
+    content: url(/assets/heroimg2.jpg)
+    z-index: -2
+    object-fit: cover
+    width: 100%
+    height: 70vh
+    object-position: left
+    grid-area: 1 / 1 / 2 / 2
+  
+  &__shader
+    z-index: -1
+    background: lightgrey
+    opacity: 0.1
+    position: absolute
+    width: 100%
+    max-height: 480px
+    height: 100%
+    grid-area: 1 / 1 / 2 / 2
+  
+  
+  p, button
+    all: unset 
+    margin: 0
+    z-index: 1
+    font-size: .88rem
+  
