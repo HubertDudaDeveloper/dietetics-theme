@@ -31,26 +31,94 @@
 }
 .hero__content-title {
   color: #ffdace;
-  text-shadow: 1px 1px grey;
   z-index: 1;
-  font-weight: bold;
   margin: 0;
   font-family: "Oooh Baby", cursive;
 }
 @media screen and (min-width: 320px) {
   .hero__content-title {
     font-size: 2rem;
+    font-weight: bold;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__content-title {
     font-size: 3rem;
+    font-weight: bold;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
   }
 }
 @media screen and (min-width: 1279px) {
   .hero__content-title {
     font-size: 5rem;
+    font-weight: bold;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
   }
+}
+.hero__content-subtitle {
+  padding: 15px 0px;
+}
+@media screen and (min-width: 320px) {
+  .hero__content-subtitle {
+    font-size: 1rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__content-subtitle {
+    font-size: 2rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__content-subtitle {
+    font-size: 3rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+.hero__content-button {
+  background: #fffce7;
+  border: 2px #ffdace solid;
+  border-radius: 20px;
+}
+@media screen and (min-width: 320px) {
+  .hero__content-button {
+    font-size: 1rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__content-button {
+    font-size: 2rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__content-button {
+    font-size: 3rem;
+    font-weight: italic;
+    color: #ffdace;
+    text-shadow: 1px 1px grey;
+  }
+}
+.hero__content-button:hover {
+  background: #ffdace;
+  border: 2px #fffce7 solid;
+  color: #fffce7;
 }
 .hero__image {
   content: url(images/heroimg2.58990535.jpg);
@@ -72,12 +140,6 @@
   max-height: 480px;
   height: 100%;
   grid-area: 1/1/2/2;
-}
-.hero p, .hero button {
-  all: unset;
-  margin: 0;
-  z-index: 1;
-  font-size: 0.88rem;
 }
 
 .contact::before {
@@ -259,6 +321,11 @@ body main {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+}
+
+a, button {
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 a:link, a:visited {

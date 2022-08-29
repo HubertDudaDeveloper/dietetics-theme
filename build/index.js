@@ -82,7 +82,11 @@ function Hero() {
     class: "hero__content-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
     class: "hero__content-title"
-  }, "Dieta wed\u0142ug Oliwii!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Zapisz si\u0119"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", null, "Click")));
+  }, "Dieta wed\u0142ug Oliwii!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "hero__content-subtitle"
+  }, "Zapisz si\u0119"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    class: "hero__content-button"
+  }, "Click")));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
