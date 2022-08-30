@@ -7,10 +7,14 @@
 
   &__content
     display: grid
-    justify-items: end
+    justify-items: center
+    @include atMedium
+      justify-items: flex-end
+
     
     &-container
-      padding: 0% 10%
+      @include atMedium
+        padding: 0% 10%
       grid-area: 1 / 1 / 2 / 2
       @include flex(column,center,center,center)
 
@@ -18,18 +22,20 @@
       color: $primaryColor
       z-index: 1
       margin: 0
-      font-family:'Oooh Baby', cursive  
+      font-family: $title
+      text-align: center 
       @include atSmall
-        @include font(2rem, bold, $primaryColor)
+        @include font(2rem, italic, $primaryColor)
       @include atMedium
-        @include font(3rem, bold, $primaryColor)
+        @include font(2rem, italic, $primaryColor)
       @include atLarge
-        @include font(5rem, bold, $primaryColor)
+        @include font(4rem, italic, $primaryColor)
 
     &-subtitle
       padding: 15px 0px
+      font-family: $subtitle
       @include atSmall
-        @include font(1rem, italic, $primaryColor)
+        @include font(1.5rem, italic, $primaryColor)
       @include atMedium
         @include font(2rem, italic, $primaryColor)
       @include atLarge
@@ -42,7 +48,7 @@
       border: 2px $primaryColor solid
       border-radius: 20px      
       @include atSmall
-        @include font(1rem, italic, $primaryColor)
+        @include font(2rem, italic, $primaryColor)
       @include atMedium
         @include font(2rem, italic, $primaryColor)
       @include atLarge
@@ -65,7 +71,7 @@
   &__shader
     z-index: -1
     background: rgb(255,252,231)
-    background: linear-gradient(0deg, rgba(255,252,231,1) 0%, rgba(0,0,0,0) 15%)
+    background: linear-gradient(0deg, rgba(255,218,206,1) 0%, rgba(0,0,0,0) 15%)
     position: absolute
     width: 100%
     height: 100%

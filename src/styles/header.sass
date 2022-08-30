@@ -20,9 +20,9 @@
                 justify-content: space-around
             @include atMedium
                 @include flex(row, space-between, center, center)
-                width: 50%
+                width: 60%
             @include atLarge
-                width: 30%
+                width: 40%
             padding: 25px 0px
 
             &-item
@@ -30,7 +30,7 @@
                 text-shadow: 1.5px 1.5px grey
                 text-transform: uppercase
                 font-weight: bold
-                font-family: 'Barlow Semi Condensed', sans-serif
+                font-family: $title !important
             &-cart
                 all: unset
                 a:hover

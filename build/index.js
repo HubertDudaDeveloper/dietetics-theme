@@ -24,29 +24,33 @@ function Contact() {
     class: "contact__form"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     class: "contact__form-name",
+    required: "true",
     placeholder: "Imi\u0119...",
     name: "name",
     type: "name"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     class: "contact__form-email",
+    required: "true",
     placeholder: "Email...",
     name: "email",
     type: "email"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
     class: "contact__form-message",
+    required: "true",
     placeholder: "Wiadomo\u015B\u0107...",
-    name: "message",
-    type: "text"
+    name: "message"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     class: "contact__form-submit",
     type: "submit",
     name: ""
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     class: "contact__form-agree",
-    name: "checkbox",
+    required: "true",
+    id: "agree",
     type: "checkbox"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
-    for: "checkbox"
+    class: "contact__form-label",
+    for: "agree"
   }, "Potwierd\u017A warunki regulaminu"));
 }
 
