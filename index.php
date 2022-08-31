@@ -6,6 +6,8 @@ get_header(); ?>
 
 <section  class="contact" id="contact"></section>
 
+<section  class="about" id="about"></section>
+
 <?php if (have_posts()) {
   while(have_posts()) {
     the_post(); ?>

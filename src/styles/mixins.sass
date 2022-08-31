@@ -10,6 +10,13 @@
   @media screen and (min-width: 1279px)
     @content
 
+@mixin container
+  max-width: 80vw
+
+@mixin gridBundle
+  grid-area: 2 / 2 / 1 / 1
+    
+
 @mixin flex($fdirection, $jcontent, $acontent, $aitems)
   display: flex
   flex-direction: $fdirection
